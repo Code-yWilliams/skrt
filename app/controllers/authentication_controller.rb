@@ -1,4 +1,5 @@
 class AuthenticationController < ApplicationController
+  include Jwt
   skip_before_action :authenticate_user, only: %i[login]
 
   def login
