@@ -50,7 +50,7 @@ end
 
 group :development do
   gem 'foreman'
+  gem 'pry'
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
 end
-
