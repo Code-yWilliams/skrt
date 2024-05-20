@@ -1,3 +1,5 @@
+# TODO: update the CRUD actions to use the UserBlueprint serializer
+
 module Api
   module V1
     class UsersController < ApiController
@@ -13,7 +15,7 @@ module Api
         @user = User.new(user_params)
 
         if @user.save
-          render json: UserBlueprint.render(@user), status: :created
+          render json: Auth::UserBlueprint.render(@user), status: :created
         else
           render json: @user.errors, status: :unprocessable_entity
         end
@@ -34,6 +36,10 @@ module Api
       def destroy
         @user.destroy
         head :ok # 200 status with no response body
+      end
+
+      def test
+        render json: { message: 'Hello World' }, status: :ok
       end
 
       private
