@@ -8,7 +8,7 @@ module ApiErrorHandler
   private
 
   def render_error(error)
-    raise error unless error.is_a?(StandardError)
+    raise error unless error.is_a?(ApiErrors::BaseError)
 
     render json: Auth::ApiErrorBlueprint.render(error), status: 200
   end
