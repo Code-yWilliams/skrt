@@ -1,0 +1,5 @@
+- set up and document approach for authorizing users for applicable routes
+  - pundit?
+- ensure secret key is solid for production
+- set up token refresh endpoint with adequate expiration time
+- consider adding token allow/deny list? pro: security, con: stateful
