@@ -1,5 +1,6 @@
 module ApiAuthenticator
   extend ActiveSupport::Concern
+  include Jwt
 
   included do
     before_action :authenticate_user
