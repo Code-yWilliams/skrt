@@ -5,6 +5,7 @@ scope default: {format: :json} do
 
       post "/login", to: "authentication#login"
       post "/signup", to: "users#create"
+      post "/refresh", to: "authentication#refresh"
       get "/test", to: "users#test"
     end
   end
