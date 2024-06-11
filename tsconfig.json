@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strictPropertyInitialization": false,
+    "paths": {
+      "@app/*": ["app/javascript/app/*"],
+      "@components": ["app/javascript/components"],
+      "@components/*": ["app/javascript/components/*"],
+      "@onboarder/*": ["app/javascript/onboarder/*"],
+      "@theme": ["app/javascript/theme"],
+      "@utils/*": ["app/javascript/utils/*"],
+      "@cypress/*": ["cypress/*"],
+      "@shared/*": ["app/javascript/shared/*"]
+    }
+  },
+  "include": [".", "./app/web_client/**/*"],
+  "exclude": ["./node_modules", "./public", "./vendor"]
+}
