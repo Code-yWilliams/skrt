@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "path": "^0.12.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.0.0",
+    "vite-plugin-full-reload": "^1.1.0",
+    "vite-plugin-ruby": "^5.0.0",
+    "vite-tsconfig-paths": "^4.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.4.5"
+  }
+}
